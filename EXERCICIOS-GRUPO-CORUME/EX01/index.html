@@ -48,9 +48,17 @@
 
   -->
 
-  <div>
-    <span>Cliquei para mudar</span>
+  <div id="caixa" onclick="trocaCor()">
+    <span>Clique para mudar</span>
   </div>
+
+  <script>
+    let caixa = document.getElementById('caixa');
+
+    function trocaCor() {
+      caixa.style.backgroundColor = 'lightgray';
+    }
+  </script>
 
 </body>
 
