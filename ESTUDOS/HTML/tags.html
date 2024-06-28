@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/tags.css" />
+    <title>Tags HTML</title>
+  </head>
+  <body id="fundo">
+    <header id="topo">
+      <h1>Tags HTML</h1>
+    </header>
+
+    <aside>
+      <a href="../sumary.html">Sumário</a>
+    </aside>
+
+    <a href="#topo">
+      <div class="topo">
+        <span>Topo</span>
+      </div>
+    </a>
+
+    <main>
+      <section>
+        <p class="dest-para">
+          Esta página lista todos os elementos HTML. Eles são agrupados por
+          função para ajuda-lo a achar o que quer fácilmente. Apesar deste guia
+          ser escrito para aqueles mais inexperientes com a programação, nós
+          esperamos que seja útil para todos.
+        </p>
+      </section>
+
+      <section id="elementosBasicos">
+        <h2>Elementos básicos</h2>
+        <p>
+          Elementos básicos são o que constituem a base de todo documento HTML.
+          Se vê esses elementos no código fonte de todas as páginas da web, logo
+          em seguida da declaração de doctype, que está na primeira linha da
+          página. O doctype específica qual a versão de (X)HTML que a página
+          está usando. Os elementos que formam o conteúdo da página são postos
+          entre a tag de abertura &lt;html&gt; e a tag de fechamento
+          &lt;/html&gt;. O elemento &lt;html&gt; é também conhecido como o
+          elemento raiz.
+        </p>
+        <table>
+          <tr>
+            <th>Elemento</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;html&gt;</td>
+            <td class="descricao">
+              O elemento HTML &lt;html&gt; (ou HTML root element) representa a
+              raiz de um HTML ou XHTML documento. Todos os outros elementos
+              devem ser descendentes desse elemento.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr />
+      <section id="metadados">
+        <h2>Metadados do documento</h2>
+        <p>
+          Os metadados são onde se guardam várias informações sobre a página,
+          incluindo informações sobre estilos, scripts e dados para auxiliar
+          software (ferramentas de pesquisa, navegadores, etc) usar e renderizar
+          a página. Os metadados de estilos e scripts podem ser definidos dentro
+          da própria página ou escritos em um arquivo externo que é referênciado
+          pela mesma.
+        </p>
+
+        <table>
+          <tr>
+            <th>Elemento</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;base&gt;</td>
+            <td class="descricao">
+              O elemento HTML base especifica o endereço(URL) utilizada por
+              todos os endereços relativos contidos dentro de um documento. Há
+              um máximo de 1(um) elemento base por documento.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;head&gt;</td>
+            <td class="descricao">
+              O elemento HTML head providencia informações gearis(metadados)
+              sobre o documento, incluindo seu título e links para scripts e
+              folhas de estilo.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;link&gt;</td>
+            <td class="descricao">
+              O elemento link especifica as relações entre o documento atual e
+              um recurso externo. Possíveis usos para este elemento incluem a
+              definição de uma estrutura relacional para navegação. Este
+              elemento é mais usado para vincular as folhas de estilo.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;meta&gt;</td>
+            <td class="descricao">
+              O elemento meta define qualquer informação de metadados que não
+              podem ser definidos por outros elementos HTML.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;style&gt;</td>
+            <td class="descricao">
+              O elemento style contém informações de estilo para um documento ou
+              uma parte do documento. As informações
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;title&gt;</td>
+            <td class="descricao">
+              O elemento title define o título, mostrando na barra de título de
+              um navegador ou na aba da página. Pode conter somente texto e
+              quaisquer marcações contidas no texto não são interpretadas.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr />
+
+      <section id="sectionRoot">
+        <h2>Section Root</h2>
+        <table>
+          <tr>
+            <th>Elemento</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;body&gt;</td>
+            <td class="descricao">
+              O elemento body representa o conteúdo de um documento HTML. É
+              permitdo apenas um &lt;body&gt; por documento.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr />
+
+      <section id="separaConteudo">
+        <h2>Separação de conteúdo</h2>
+        <p>
+          Elementos de separação de conteúdo permitem organizar o conteúdo do
+          documento em partes lógicas. Use elementos de separação para criar um
+          esboço do conteúdo da página, incluindo navegação por cabeçalho e
+          rodapé, e elementos de cabeçalho para identificar seções de conteúdo.
+        </p>
+        <table>
+          <tr>
+            <th>Elemento</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;address&gt;</td>
+            <td class="descricao">
+              O elemento address fornece informações de contato para seu
+              ancestral &lt;article&gt; ou &lt;body&gt; mais próximo; no segundo
+              caso, ele se aplica ao documento inteiro.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;article&gt;</td>
+            <td class="descricao">
+              O elemento article representa uma composição independente em um
+              documento, página, aplicação ou site, ou o que é destinado a ser
+              distribuido de forma independente ou reutilizável, por exemplo, em
+              sindicação. Este poderia ser o post de um fórum, um artigo de
+              revista ou jornal, um post de um blog, um comentário enviado por
+              um usuário, um gadget ou widget interativo, ou qualquer outra
+              forma de conteúdo independente.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;aside&gt;</td>
+            <td class="descricao">
+              O elemento aside representa uma seleção de uma página que consiste
+              de conteúdo que é tangencialmente relacionado ao conteúdo em seu
+              entorno, que poderia ser considerado separado do conteúdo. Essas
+              seções são, muitas vezes, representadas como barras laterais. Elas
+              muitas vezes contem explicações laterais, como a definição de um
+              glossário; conteúdo vagamente relacionado, como avisos; a
+              biografia do autor; ou, em aplicações web, informações de perfil
+              ou links de blogs relacionados.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;footer&gt;</td>
+            <td class="descricao">
+              O elemento footer representa um rodapé para o seu sectioning
+              content (conteúdo de seção) mais próximo ou sectioning root
+              elemento (ou seja, seu parente mais próximo &lt;article&gt;,
+              &lt;aside&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;blockquote&gt;,
+              &lt;body&gt;, &lt;details&gt;, &lt;fieldset&gt;, &lt;figure&gt;,
+              &lt;td&gt;). Normalmente um rodapé contém informações sobre o
+              autor da seção de dados, direitos autorais ou links para
+              documentos relacionados.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;header&gt;</td>
+            <td class="descricao">
+              O elemento header representa um grupo de suporte introdutório ou
+              navegacional. Pode conter alguns elementos de cabeçalho mas também
+              outros elementos como um logo, seções de cabeçalho, formulário de
+              pesquisa, e outros.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">
+              &lt;h1&gt; &lt;h2&gt; <br />
+              &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;
+            </td>
+            <td class="descricao">
+              Os elementos &lt;h1&gt;-&lt;h6&gt; representam seis níveis de
+              título de seção. &lt;h1&gt; é o nível de seção mais alto e
+              &lt;h6&gt; é o mais baixo.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;main&gt;</td>
+            <td class="descricao">
+              O elemento main define o conteúdo dentro do &lt;body&gt; em seu
+              documento ou aplicação. Entende-se como conteúdo principal aquele
+              relacionado diretamente com o tópico central da página ou com a
+              funcionalidade central da aplicação. O mesmo deverá ser único na
+              página, ou seja, dentro do elemento &lt;main&gt; não deverão ser
+              incluidas seções da página que sejam comuns a todo o site ou
+              aplicação, tais como mecanismos de navegação, informações de
+              copyright, logotipo e campos de busca (a não ser, é claro, caso a
+              função principal do documento seja fazer algum tipo de busca).
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;nav&gt;</td>
+            <td class="descricao">
+              O elemento nav representa uma seção de uma página que aponta para
+              outras páginas ou para outras áreas da página, ou seja, uma seção
+              com links de navegação.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;section&gt;</td>
+            <td class="descricao">
+              O elemento section representa uma seção genérica contida em um
+              documento HTML, geralmente com um título, quando não existir um
+              elemento semântico mais específico para representá-lo.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr />
+
+      <section id="conteudoTextual">
+        <h2>Conteúdo textual</h2>
+        <p>
+          Usam-se elementos HTML de conteúdo textual para se organizar blocos ou
+          seções de conteúdo postos entre as tags de abertura &lt;body&gt; e
+          fechamento &lt;/body&gt;. Importantes para accessibilidade e SEO,
+          esses elementos identificam o propósito ou estrutura do conteúdo.
+        </p>
+        <table>
+          <tr>
+            <th>Elemento</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;blockquote&gt;</td>
+            <td class="descricao">
+              O elemento blockquote indica que o texto incluído é uma longa
+              citação. Normalmente, este é processado visualmente pelo recuo
+              (ver Notas sobre como mudá-lo). A URL para a fonte da citação pode
+              ser dada usando o atributo cite, enquanto uma representação de
+              texto da fonte pode ser dada usando o &lt;cite&gt; elemento.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;dd&gt;</td>
+            <td class="descricao">
+              O elemento dd fornece detalhes ou uma definição mais completa do
+              termo precedente (definido por &lt;dt&gt;) numa lista de
+              descrições (&lt;dl&gt;).
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;div&gt;</td>
+            <td class="descricao">
+              O elemento div é um container genérico para conteúdo de fluxo, que
+              de certa forma não representa nada. Ele pode ser utilizado para
+              agrupar elementos para fins de estilos (usando class ou id), ou
+              porque eles compartilham valores de atributos, como lang. Ele deve
+              ser utilizado somente quando não tiver outro elemento de semântica
+              (tal como &lt;article&gt; ou &lt;nav&gt;).
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;dl&gt;</td>
+            <td class="descricao">
+              O elemento dl engloba uma lista de pares de termos e descrições.
+              Um uso comum para este elemento é para implementar um glossário ou
+              exibir metadados(uma lista de pares chave e valor).
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;dt&gt;</td>
+            <td class="descricao">
+              O elemento dt (ou Elemento HTML de Definição de Termo) identifica
+              um termo na lista de definição. Este elemento pode ocorrer somente
+              em um elemento filho de &lt;dl&gt;. Geralmente seguido por um
+              elemento &lt;dd&gt;; ou multiplos &lt;dt&gt; na mesma linha
+              indicam vários termos sendo definidos pelo próximo element
+              &lt;dd&gt;.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;figcaption&gt;</td>
+            <td class="descricao">
+              O elemento figcaption representa uma legenda ou uma legenda
+              associada com uma figura ou ilustração descrita pelo resto dos
+              dados do elemento &lt;figure&gt; que seu elemento pai.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;figure&gt;</td>
+            <td class="descricao">
+              O elemento figure representa conteúdo autocontido, potencialmente
+              com uma legenda opcional, que é especificada usando o
+              &lt;figcaption&gt; elemento. A figura, sua legenda e seu conteúdo
+              são referenciados como uma única unidade.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;hr&gt;</td>
+            <td class="descricao">
+              O elemento hr representa uma quebra temática entre elementos de
+              nível de parágrafo (por exemplo , uma mudança da cena de uma
+              história, ou uma mudança de tema com uma seção). Nas versões
+              anteriores do HTML, representava uma linha horizontal. Pode
+              continuar sendo exibida como uma linha horizontal nos navegadores,
+              mas agora está definida em termos semânticos, em vez de termos de
+              apresentação.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;li&gt;</td>
+            <td class="descricao">
+              O elemento li(ou a Lista dos Itens de um elemento HTML) é usado
+              para representar um item que faz parte de uma lista. Este item
+              deve estar contido em um elemento pai: uma lista ordenada
+              (&lt;ol&gt;), uma lista desordenada (&lt;ul&gt;) , ou um menu
+              (&lt;menu&gt;) e representa uma única entidade dessa lista. Em
+              menus e listas desordenadas a relação de itens é exibida,
+              normalmente, usando pontos de marcação (as bolinhas). Em listas
+              ordenadas eles são, comumente, mostrados com algum contador
+              ascendente - como um número, ou letra - à sua esquerda.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;menu&gt;</td>
+            <td class="descricao">
+              O elemento menu é uma alternativa semântica para a tag &lt;ul&gt;
+              não tendo diferença visual. Ela representa uma lista não ordenada
+              de itens.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;ol&gt;</td>
+            <td class="descricao">
+              O elemento ol representa uma lista de itens oredenados. De forma
+              característica esses itens ordenados em uma lista são mostrados
+              com uma contagem que os precede, que pode ser de qualquer tipo,
+              como numerais, letras, algarismos romanos, ou simples símbolos.
+              Esse modelo numerado não é definido na descrição html da página,
+              mas na folha de estilos CSS associada ao documento.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;p&gt;</td>
+            <td class="descricao">
+              O elemento p é representa um parágrafo. Em mídias visuais,
+              parágrafos são representados como blocos indentados de texto com a
+              primeira letra avançada e separados por linhas em branco. Já em
+              HTML, parágrafos são usados para agrupar conteúdos relacionados de
+              qualquer tipo, como imagens e campos de um formulário.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;pre&gt;</td>
+            <td class="descricao">
+              O elemento pre é a tag utilizada para representar texto
+              pré-formatado. Um texto dentro desse elemento é tipicamente
+              exibido em uma fonte não proporcional da mesma maneira em que o
+              texto original foi disposto no arquivo. Espaços em branco são
+              mantidos no texto da mesma forma em que este foi digitado.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;ul&gt;</td>
+            <td class="descricao">
+              O elemento ul representa uma lista de itens sem ordem rígida, isto
+              é, uma coleção de itens que não trazem uma ordenação numérica e as
+              suas posições, nessa lista, são irrelevantes. Caracteristicamente,
+              os itens em uma lista desordenada são exibidos com um marcador que
+              pode ter várias formas, como um ponto, um círculo, ou um quadrado.
+              O tipo de marcador não é definido na descrição HTML da página, mas
+              na CSS associada, utilizando a propriedade list-style-type.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr />
+
+      <section id="semanticaTextual">
+        <h2>Sêmanticas textuais inline</h2>
+        <p>
+          Usa-se a sêmantica textual inline para definir o significado,
+          estrutura, ou estilo de uma palavra, linha ou de qualquer outro tipo
+          de texto.
+        </p>
+        <table>
+          <tr>
+            <th>Elemento</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;a&gt;</td>
+            <td class="descricao">
+              O elemento a (ou elemento âncora), com o atributo
+              <span class="elemento">href</span> cria-se uma hiperligação nas
+              páginas web, arquivos, endereços de emails, ligações na mesma
+              página ou endereços na URL. O conteúdo dentro de cada tag
+              &lt;a&gt; precisará indicar o destino do link.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;abbr&gt;</td>
+            <td class="descricao">
+              O elemento abbr (ou elemento de abreviação HTML) erpresenta uma
+              abreviação e opcionalmente fornece uma descrição completa para
+              ela. Se presente, o atributo
+              <span class="elemento">title</span>deve conter a descrição
+              completa e apenas ela.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;b&gt;</td>
+            <td class="descricao">
+              O elemento b representa um intervalo de texto estilisticamente
+              diferenciado do texto normal, sem transmitir qualquer importância
+              ou relevância. Ele é geralmente usado para destacar palavras-chave
+              em um resumo, nomes de produtos em um comnetário ou outros vãos de
+              texto cuja a apresentação típica seria negrito. Outro exemplo de
+              seu uso é como marcação da frase principal de cada parágrafo de um
+              artigo.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;bdi&gt;</td>
+            <td class="descricao">
+              O elemento bdi (ou elemento de isolamento bidimensional) isola um
+              trecho de texto que pode ser formatado em uma direção diferente de
+              outro texto fora dela.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;bdo&gt;</td>
+            <td class="descricao">
+              O elemento bdo (bidimensional override) é usado para substituir a
+              direcionalidade atual do texto. Isso faz com que a direcionalidade
+              dos personagens seja ignorada em favor da direcionalidade
+              especificada.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;br&gt;</td>
+            <td class="descricao">
+              O elemento br produz uma quebra de linha em um texto. É útil para
+              escrever poemas ou um endereço, onde a divisão da linha é
+              significante.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;cite&gt;</td>
+            <td class="descricao">
+              O elemento cite representa uma referência a um atributo artístico.
+              Deve incluir o título do trabalho ou uma URL de referência, que
+              pode ser em uma forma abreviada de acordo com as convenções usadas
+              para a adição dos metadados de citação.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;code&gt;</td>
+            <td class="descricao">
+              O elemento code apresenta seu conteúdo de maneira a indicar que o
+              texto é um pequeno fragmento de código. Por padrão, o conteúdo é
+              exibido utilizando uma fonte monoespaçada.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;data&gt;</td>
+            <td class="descricao">
+              O elemento data vincula um determinado conteúdo a uma tradução
+              legível por máquina. Se o conteúdo for relacionado a hora ou data,
+              &lt;time&gt; deverá ser usado.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;dfn&gt;</td>
+            <td class="descricao">
+              O elemento dfn(ou elemento definição HTML) representa uma
+              instância de definição de um termo.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;em&gt;</td>
+            <td class="descricao">
+              O elemento em marca o texto que tem ênfase. O elemento
+              <span class="elemento">&lt;em&gt;</span> pode ser aninhado, com
+              cada nível de aninhamento indicando um grau maior de ênfase.
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;i&gt;</td>
+            <td class="descricao">
+              O elemento irepresenta uma parte do texto que é destacada do
+              restante por algum motivo, por exemplo, termos técnicos,
+              expressões de outros idiomas ou pensamentos de personagens
+              fictícios. Normalmente, é apresentado com o uso do tipo "itálico".
+            </td>
+          </tr>
+          <tr>
+            <td class="elemento">&lt;kbd&gt;</td>
+            <td class="descricao">
+              O elemento kbd representa uma extensão de textos embutido que
+              denota entrada textual do usuátrio a partir de um teclado, entrada
+              de voz ou qualquer outro dispositivo de entrada de texto. Por
+              convenção, o agente de usuário usa como padrão a renderização do
+              conteúdo de um &lt;kbd&gt; elemento usando sua fonte monoespaçada
+              padrão, embora isso não seja obrigatório pelo ádrão HTML.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <button onclick="mudaCorFundo()" id="dark-light">Modo Dark-Light</button>
+
+      <script src="../JS/tags.js"></script>
+    </main>
+  </body>
+</html>

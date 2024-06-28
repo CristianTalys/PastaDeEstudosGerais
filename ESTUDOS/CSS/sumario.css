@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* personalização do header */
+header {
+  display: flex;
+  width: 100vw;
+  background-color: #ff914d;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-bottom: 3px solid #943e3e;
+}
+
+header > h1 {
+  letter-spacing: 3px;
+  font-size: 2.4em;
+  color: #ffffff;
+  padding: 7px;
+  background-color: #943e3e;
+  border-radius: 12px;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.76);
+}
+
+.principal {
+  background-color: #943e3e;
+  width: 100%;
+  max-width: 920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px auto;
+  padding-block: 20px;
+}
+
+.tema {
+  padding: 25px;
+  text-align: center;
+  margin: 7px ;
+}
+
+.html, .js {
+  background-color: #ff914d;
+  color: white;
+}
+
+.css {
+    background-color: #0084ff;
+    color: white;
+}
+
+.tema>h2{
+    text-decoration: underline;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.tema section ol a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.tema section ol a li {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 7px;
+    transition: .4s;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.tema section ol a li:hover {
+    background-color: #943e3e;
+}
