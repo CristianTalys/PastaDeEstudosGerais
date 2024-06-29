@@ -17,6 +17,12 @@ body {
   border-radius: 5px;
   color: white;
   font-weight: bold;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ac0b13;
 }
 
 .textos {

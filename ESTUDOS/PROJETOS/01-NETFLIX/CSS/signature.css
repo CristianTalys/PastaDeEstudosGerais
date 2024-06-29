@@ -1,0 +1,37 @@
+#showMe {
+    position: absolute;
+    top: -1300;
+    width: 98vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.692);
+    transition: .6s;
+    padding-bottom: 75px;
+    border-bottom: 25px solid black;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.432), rgba(255, 0, 0, 0.534), rgba(194, 117, 2, 0.616));
+}
+
+aside div{
+    height: 400px;
+    width: 400px;
+    background-image: url(../SRC/IMAGENS/assinatura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 50%;
+    border: 5px solid rgb(211, 48, 48);
+    margin: 150px auto;
+    
+}
+
+aside button {
+    font-size: 3em;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.719);
+}

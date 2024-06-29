@@ -18,7 +18,9 @@ header {
 }
 
 .logo {
-  width: 12%;
+  margin-left: 15px;
+  width: 70%;
+  cursor: pointer;
 }
 
 .criarConta {
@@ -26,9 +28,13 @@ header {
   padding-bottom: 6.5em;
 }
 
+.criarConta>p {
+  margin-bottom: 7px;
+}
+
 .criarConta>input {
   border: 1px solid lightgray;
-  background-color: rgba(0, 0, 0, 0.66);
+  background-color: rgba(32, 32, 32, 0.66);
   padding: 0 20px;
   height: 60px;
   width: 50%;
@@ -37,6 +43,10 @@ header {
   margin-top: 10px;
   font-size: 1em;
   font-weight: bold;
+}
+
+.criarConta>input::placeholder{
+  padding-top: 0;
 }
 
 .criarConta>button {

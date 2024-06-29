@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="CSS/geral.css">
   <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="CSS/main.css">
-  <title>Netflix</title>
+  <link rel="stylesheet" href="CSS/faq.css">
+  <link rel="stylesheet" href="CSS/signature.css">
+  <link rel="shortcut icon" href="SRC/IMAGENS/favicon.png" type="image/x-icon">
+  <title>BrasiFlix</title>
 </head>
 
 <body>
@@ -15,7 +18,7 @@
     <div class="containerHeader">
       <div class="headerNav">
         <div>
-          <img src="SRC/IMAGENS/logo.png" alt="" class="logo">
+          <img src="SRC/IMAGENS/favicon.png" alt="" class="logo" onclick="showSignature()">
         </div>
         <div>
           <button class="btn btnEntrar">Entrar</button>
@@ -30,7 +33,7 @@
         <div class="criarConta">
           <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
 
-          <input type="email" placeholder="Email"> <button>Vamos lá &gt;</button>
+          <input type="email" placeholder="Email"> <button class="btn">Vamos lá &gt;</button>
         </div>
       </div>
     </div>
@@ -44,7 +47,15 @@
       </p>
 
       <div class="imgTV">
-        <img src="SRC/IMAGENS/tv.png" alt="">
+        <div class="">
+          <img src="SRC/IMAGENS/tv.png" alt="">
+        </div>
+        <div>
+          <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="">
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              type="video/mp4">
+          </video>
+        </div>
       </div>
     </section>
 
@@ -57,7 +68,13 @@
       </p>
 
       <div class="imgDevice">
-        <img src="SRC/IMAGENS/device-pile.png" alt="">
+        <div>
+          <div><img src="SRC/IMAGENS/device-pile.png" alt=""></div>
+          <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="">
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+              type="video/mp4">
+          </video>
+        </div>
       </div>
     </section>
 
@@ -93,28 +110,64 @@
     <section id="FAQ">
       <h1>Perguntas frequentes</h1>
 
-      <div class="pergutnta">
-        O que é a Netflix?
+      <div class="pergunta1">
+        <p>O que é assistir?</p> <span class="btnPlus">+</span>
       </div>
-      <div class="pergutnta">
-        Onde posso assistir?
+      <div class="resposta1" id="r1">
+        <p>
+          A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários
+          premiados em milhares de aparelhos conectados à internet.
+        </p>
+        <p>
+          Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal
+          acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+        </p>
       </div>
-      <div class="pergutnta">
-        Como faço para cancelar?
+      <div class="pergunta2">
+        <p>Onde posso assistir?</p> <span class="btnPlus">+</span>
       </div>
-      <div class="pergutnta">
-        O que eu posso assistir na Netflix?
+      <div class="resposta2" id="r2">
+        <p>
+          Assista onde quiser, quando quiser. Acesse sua conta Netflix em netflix.com para assistir no computador ou em qualquer aparelho conectado à internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+        </p>
+        <p>
+          Você também pode baixar suas séries favoritas com o aplicativo Netflix para iOS ou Android. Use os downloads para levar a Netflix para onde quiser sem precisar de conexão com a internet. Leve a Netflix com você para qualquer lugar.
+        </p>
       </div>
-      <div class="pergutnta">
-        A Netflix é adequada para crianças?
+      <div class="pergunta3">
+        <p>Como faço para cancelar?</p> <span class="btnPlus">+</span>
       </div>
-
-      <div class="criarConta">
-        <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-
-        <input type="email"> <button>Vamos lá &gt;</button>
+      <div class="resposta2" id="r3">
+        <p>
+          A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
+        </p>
+      </div>
+      <div class="pergunta4">
+        <p>O que eu posso assistir na Netflix?</p> <span class="btnPlus">+</span>
+      </div>
+      <div class="resposta2" id="r4">
+        <p>
+          A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
+        </p>
+      </div>
+      <div class="pergunta5">
+        <p>A Netflix é adequada para crianças?</p> <span class="btnPlus">+</span>
+      </div>
+      <div class="resposta2" id="r5">
+        <p>
+          A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
+        </p>
+        <p>
+          O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.
+        </p>
       </div>
     </section>
+
+    <div class="criarConta c2" id="criaConta">
+      <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+
+      <input type="email" placeholder="Email"> <button class="btn">Vamos lá &gt;</button>
+    </div>
 
     <hr>
 
@@ -122,6 +175,22 @@
       <h3>Dúvidas? Ligue <a href="#">0800 591 2876</a></h3>
     </footer>
   </main>
+  <aside id="showMe">
+    <button onclick="hideSignature()">X</button>
+    <div>
+      
+    </div>
+  </aside>
+
+  <script src="JS/faq.js"></script>
+  <script src="JS/signature.js"></script>
+  <script>
+    document.querySelector('.pergunta1').addEventListener("click", mostraDiv1);
+    document.querySelector('.pergunta2').addEventListener("click", mostraDiv2);
+    document.querySelector('.pergunta3').addEventListener("click", mostraDiv3);
+    document.querySelector('.pergunta4').addEventListener("click", mostraDiv4);
+    document.querySelector('.pergunta5').addEventListener("click", mostraDiv5);
+  </script>
 </body>
 
 </html>
