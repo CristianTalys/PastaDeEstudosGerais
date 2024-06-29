@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.btn {
+  background-color: #e50914;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.textos {
+  text-align: center;
+}
+
+.textos > h1 {
+  margin-bottom: 1em;
+}

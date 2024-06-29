@@ -1,0 +1,55 @@
+header {
+  background-image: url(../SRC/IMAGENS/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.containerHeader {
+  background-color: rgba(0, 0, 0, 0.662);
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10%;
+}
+
+.logo {
+  width: 12%;
+}
+
+.criarConta {
+  padding-top: 2em;
+  padding-bottom: 6.5em;
+}
+
+.criarConta>input {
+  border: 1px solid lightgray;
+  background-color: rgba(0, 0, 0, 0.66);
+  padding: 0 20px;
+  height: 60px;
+  width: 50%;
+  border-radius: 7px;
+  color: white;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.criarConta>button {
+  position: relative;
+  right: 0;
+  bottom: -3px;
+  height: 60px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  border-radius: 7px;
+  font-size: 1.6em;
+  padding: 0 1.3em;
+  margin-left: 15px;
+  cursor: pointer;
+}
