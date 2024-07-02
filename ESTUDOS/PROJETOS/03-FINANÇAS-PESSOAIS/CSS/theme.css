@@ -1,0 +1,33 @@
+:root {
+  /* paleta Marsala */
+  --marsala-1: rgb(88, 29, 34);
+  --marsala-2: rgb(130, 86, 89);
+  --marsala-3: rgb(172, 142, 145);
+  --marsala-4: rgb(213, 199, 200);
+  --marsala-5: rgb(255, 255, 255);
+
+  /* paleta verde */
+
+  --green-1: rgb(3, 187, 133);
+  --green-2: rgb(0, 162, 110);
+  --green-3: rgb(0, 138, 88);
+  --green-4: rgb(0, 114, 67);
+  --green-5: rgb(18, 102, 61);
+
+  /* paleta amarela */
+
+  --yellow-1: rgb(255, 235, 59, 0.95);
+  --yellow-2: rgb(227, 210, 22, 0.95);
+  --yellow-3: rgb(200, 185, 0, 0.95);
+  --yellow-4: rgb(173, 161, 0, 0.95);
+  --yellow-5: rgb(147, 138, 0, 0.95);
+
+  /* theme variables */
+  --light-theme: rgb(255, 255, 255);
+
+  --dark-theme: #3C3C3C;
+}
+
+body {
+  transition: 1s;
+}
