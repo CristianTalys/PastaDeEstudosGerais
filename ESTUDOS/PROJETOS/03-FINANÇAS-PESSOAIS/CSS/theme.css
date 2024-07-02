@@ -25,9 +25,52 @@
   /* theme variables */
   --light-theme: rgb(255, 255, 255);
 
-  --dark-theme: #3C3C3C;
+  --dark-theme: #3c3c3c;
 }
 
 body {
   transition: 1s;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btnDarkTheme,
+.btnLightTheme {
+  border: none;
+  position: absolute;
+  top: -22px;
+  left: 3%;
+  padding-top: 35px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s;
+  border-bottom: 4px solid lightgray;
+}
+
+.btnDarkTheme:active, .btnLightTheme:active {
+  border-bottom: 3px solid lightgray;
+  top: -20px;
+} 
+.lightTheme {
+  background-color: var(--light-theme);
+  color: var(--dark-theme);
+}
+
+.darkTheme{
+  background-color: var(--dark-theme);
+  color: var(--light-theme);
+}
+
+.btnDarkTheme {
+  background-color: var(--dark-theme);
+  color: var(--light-theme);
+}
+
+.btnLightTheme {
+  background-color: var(--light-theme);
+  color: var(--dark-theme);
 }
