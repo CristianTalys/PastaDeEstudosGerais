@@ -1,0 +1,11 @@
+main {
+  transition: .4s
+}
+
+section {
+  width: 90%;
+  margin: 25px auto;
+  background-color: var(--green-3);
+  padding: 14px;
+  border-radius: 12px;
+}

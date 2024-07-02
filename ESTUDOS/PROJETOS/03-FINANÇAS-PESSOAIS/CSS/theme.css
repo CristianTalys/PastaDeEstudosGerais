@@ -48,12 +48,13 @@ body {
   text-align: center;
   cursor: pointer;
   transition: .4s;
-  border-bottom: 4px solid lightgray;
+  border-bottom: 4px solid gray;
 }
 
 .btnDarkTheme:active, .btnLightTheme:active {
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid gray;
   top: -20px;
+  padding-top: 34px;
 } 
 .lightTheme {
   background-color: var(--light-theme);
