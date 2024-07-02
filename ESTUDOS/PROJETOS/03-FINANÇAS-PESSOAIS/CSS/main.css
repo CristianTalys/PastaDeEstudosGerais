@@ -1,13 +1,125 @@
 main {
-  transition: .4s;
+  transition: 0.4s;
   max-width: 980px;
   margin: 25px auto;
+  margin-bottom: 90px;
 }
 
 section {
   width: 90%;
   margin: 25px auto;
   background-color: var(--green-3);
-  padding: 14px;
+  padding-block: 14px;
   border-radius: 12px;
+  color: white;
+}
+
+section > h2 {
+  text-align: center;
+  padding: 4px;
+  background-color: var(--green-2);
+  color: white;
+  border-bottom: 1px solid var(--yellow-2);
+  border-top: 1px solid var(--yellow-2);
+  margin-bottom: 15px;
+}
+
+.conhecer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnConhecer {
+  padding: 12px;
+  border: none;
+  margin: 18px auto;
+  text-align: center;
+  background-color: var(--yellow-1);
+  color: var(--green-2);
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+  bottom: -10px;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+.btnLogar {
+  position: absolute;
+  top: 40px;
+  left: -25px;
+}
+
+#btnLogar {
+  font-size: 1.3em;
+  padding-left: 50px;
+  padding-block: 12px;
+  padding-right: 20px;
+  border: none;
+  margin: 18px auto;
+  text-align: center;
+  background-color: var(--yellow-1);
+  color: var(--green-2);
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+  bottom: -10px;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+#btnLogar:hover {
+  background-color: var(--yellow-2);
+  color: var(--green-1);
+  box-shadow: 0px 0px 12px var(--green-1);
+}
+
+.btnConhecer:hover {
+  background-color: var(--yellow-2);
+  color: var(--green-1);
+  box-shadow: 0px 0px 12px var(--yellow-1);
+}
+
+article {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-right {
+  width: 33%;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border-left: 2px solid var(--yellow-1);
+  padding: 15px;
+  margin-left: 7px;
+}
+
+.img-left {
+  width: 33%;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border-right: 2px solid var(--yellow-1);
+  padding: 30px;
+  margin-right: 7px;
+}
+
+.moedas {
+  background-image: url(../SRC/IMGS/moedas.png);
+}
+
+.relogio {
+  background-image: url(../SRC/IMGS/relógio.png);
+}
+
+.qualidade {
+  background-image: url(../SRC/IMGS/alta.png);
+  background-size: 200% !important;
 }
