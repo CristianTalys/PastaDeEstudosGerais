@@ -1,5 +1,7 @@
 main {
-  transition: .4s
+  transition: .4s;
+  max-width: 980px;
+  margin: 25px auto;
 }
 
 section {
