@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../../CSS/reset.css">
   <link rel="stylesheet" href="CSS/theme.css">
   <link rel="stylesheet" href="CSS/header.css">
@@ -15,25 +16,26 @@
 
 <body class="" id="fundo">
   <div>
-    <button class="btnDarkTheme" id="btnTema" onclick="trocaTema()">Tema <br><span id="tema">Dark</span></button>
+    <button class="btnDarkTheme" id="btnTema" onclick="trocaTema()"><i class="bi bi-brightness-high-fill" id="tema"></i></span></button>
   </div>
 
   <div class="btnLogar">
-    <button id="btnLogar">Entrar</button>
+    <a href="HTML/login.html"><button id="btnLogar">Entrar</button></a>
   </div>
 
   <header>
-    <div>
-      <nav>
-        <div class="logo">
-          <h1>JinkasFinanças</h1>
-        </div>
-        <div class="imgLogo">
-        </div>
-      </nav>
+    <div class="container-logo">
+      <div>
+        Chorumes <span class="blackColor">Finanças</span>
+      </div>
+      <div class="logo">
+        <img src="SRC/IMGS/coisn.webp" alt="">
+      </div>
     </div>
   </header>
 
+  <aside id="imgFundo">
+  </aside>
   <main id="main">
     <section id="apresentacao">
       <h2>Aqui você terá total controle sobre o que faz com seu rico dinheirinho!</h2>
@@ -82,7 +84,7 @@
         <div>
           <a href="">
             <button class="btnConhecer">
-              Quero conhecer
+              Criar Conta
             </button>
           </a>
         </div>

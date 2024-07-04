@@ -37,7 +37,7 @@ body {
 .btnDarkTheme,
 .btnLightTheme {
   border: none;
-  position: absolute;
+  position: fixed;
   top: -22px;
   right: 3%;
   padding-top: 35px;
@@ -49,6 +49,7 @@ body {
   cursor: pointer;
   transition: .4s;
   border-bottom: 4px solid gray;
+  z-index: 300;
 }
 
 .btnDarkTheme:active, .btnLightTheme:active {

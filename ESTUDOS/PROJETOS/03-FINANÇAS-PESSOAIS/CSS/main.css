@@ -3,6 +3,7 @@ main {
   max-width: 980px;
   margin: 25px auto;
   margin-bottom: 90px;
+  margin-top: 180px;
 }
 
 section {
@@ -47,9 +48,10 @@ section > h2 {
 }
 
 .btnLogar {
-  position: absolute;
+  position: fixed;
   top: 40px;
   left: -25px;
+  z-index: 300;
 }
 
 #btnLogar {
@@ -123,3 +125,14 @@ article {
   background-image: url(../SRC/IMGS/alta.png);
   background-size: 200% !important;
 }
+
+#imgFundo {
+  position: fixed;
+  z-index: -300;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../SRC/IMGS/right-img.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 550px;
+} 
