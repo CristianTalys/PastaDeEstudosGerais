@@ -134,3 +134,15 @@ a:hover{
 #iconEye:hover {
     background-color: #4decb2;
 }
+
+.link a {
+    text-decoration: none;
+    color: #038C5A;
+    padding: 4px;
+    transition: .4s;
+    border-radius: 12px;
+}
+
+.link a:hover {
+    background-color: rgb(197, 197, 197);
+}
