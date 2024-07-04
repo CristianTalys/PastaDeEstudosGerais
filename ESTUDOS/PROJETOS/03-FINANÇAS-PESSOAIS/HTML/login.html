@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!--Link Css-->
   <link rel="stylesheet" href="../CSS/estilo-login.css">
   <title>Login</title>
@@ -13,14 +14,13 @@
   <main>
     <div id="container">
       <div id="background-imagem"> <!--Imagem principal da tela de login-->
-
+        <div class="logo"></div>
       </div>
       <span class="block">
         <h1>Entrar</h1>
       </span>
       <div id="form-login">
         <div class="line">
-
         </div>
         <form method="post">
           <div id="email-box"> <!--Separar os inputs por divs-->
@@ -29,7 +29,10 @@
           </div>
           <div id="password-box">
             <label for="ipass">Senha</label>
-            <input type="password" name="pass" id="ipass" class="inputs" required placeholder="Senha">
+            <div class="container-senha">
+              <input type="password" name="pass" id="password" class="inputs" required placeholder="Senha">
+              <i class="bi bi-eye-slash-fill" id="iconEye" onclick="trocaOlho()"></i>
+          </div>
           </div>
           <div id="remember-box">
             <input type="checkbox" name="check" id="icheck">
@@ -48,6 +51,7 @@
       </div>
     </div>
   </main>
+  <script src="../JS/eyeScript.js"></script>
 </body>
 
 </html>
