@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./../../../CSS/reset.css">
+  <link rel="stylesheet" href="../CSS/mainPage.css">
+  <title>Chorumes Finanças</title>
+</head>
+
+<body>
+  <header>
+    <h2>Bem vindo <span id="userName">{userName}</span>!</h2>
+    <div class="container-btns">
+      <button class="btn" id="btn-perfil"><a href=""><i class="bi bi-person-circle"></i></a></button>
+      <button class="btn" id="btn-sair"><a href=""><i class="bi bi-door-open"></a></i></button>
+    </div>
+  </header>
+
+  
+
+  <main>
+    <section style="z-index: 150;">
+      <h3 class="title">Painel de controle do usuário</h3>
+      <div class="btns-main">
+        <div class="borda-div">
+          <div class="doubledata">
+            <input type="number" placeholder="Insira um valor">
+            <input type="text" placeholder="Insira uma descrição">
+          </div>
+          <button id="lEntrada" class="btn-launch">Lançar entrada</button>
+        </div>
+        <div class="borda-div">
+          <div class="doubledata">
+            <input type="number" placeholder="Insira um valor">
+            <input type="text" placeholder="Insira uma descrição">
+          </div>
+          <button id="lSaida" class="btn-launch">Lançar despesa</button>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="menosMargin">
+      <div class="layoutDados">
+        <div class="caixa">
+          <h3>Créditos</h3>
+          <table>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+            </tr>
+            <tr class="tr1">
+              <td>Descrição de exemplo</td>
+              <td>R$999.73</td>
+            </tr>
+            <tr class="tr2">
+              <td>Descrição de exemplo</td>
+              <td>R$999.73</td>
+            </tr>
+            <tr class="tr1">
+              <td>Descrição de exemplo</td>
+              <td>R$999.73</td>
+            </tr>
+            <tr class="tr2">
+              <td>Descrição de exemplo</td>
+              <td>R$999.73</td>
+            </tr>
+            <tfoot>
+              <td>Total de Vencimentos</td>
+              <td>R$<span id="valorCreditos">3998.92</span></td>
+            </tfoot>
+          </table>
+        </div>
+        <div class="caixa">
+          <h3>Débitos</h3>
+          <table>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+            </tr>
+            <tr class="tr1">
+              <td>Descrição de exemplo</td>
+              <td>R$999.73</td>
+            </tr>
+            <tr class="tr2">
+              <td>Descrição de exemplo</td>
+              <td>R$999.73</td>
+            </tr>
+            <tr class="tr1">
+              <td>Descrição de exemplo</td>
+              <td>R$999.73</td>
+            </tr>
+            <tr class="tr2">
+              <td>Descrição de exemplo</td>
+              <td>R$999.73</td>
+            </tr>
+            <tfoot>
+              <td>Total de Vencimentos</td>
+              <td>R$<span id="valorDebitos">3998.92</span></td>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <aside class="saldo">
+    <h3>Saldo</h3>
+    <div id="saldo">
+      asdasd
+    </div>
+  </aside>
+</body>
+
+</html>
