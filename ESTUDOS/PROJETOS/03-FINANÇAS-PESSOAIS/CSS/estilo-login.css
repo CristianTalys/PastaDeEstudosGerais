@@ -146,3 +146,9 @@ a:hover{
 .link a:hover {
     background-color: rgb(197, 197, 197);
 }
+
+.msg-erro{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
