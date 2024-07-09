@@ -7,10 +7,6 @@
   --Yellow: #d9cc1a;
 }
 
-.mt-1 {
-  margin-top: 25px;
-}
-
 header {
   height: 70px;
   display: flex;
@@ -189,13 +185,42 @@ div button {
   margin-block: 15px;
 }
 
-.saldo {
+.caixa table {
+  width: 80%;
+  background-color: var(--lightGreen50);
+  margin: 7px auto;
+  border: 1px solid black;
   text-align: center;
+  border-collapse: collapse;
+  font-size: 1.3em;
+}
+
+th {
+  background-color: rgb(233, 233, 233);
+}
+
+tfoot {
+  background-color: rgb(233, 233, 233);
+}
+
+th, td {
+  border: 1px solid black;
+  width: 50%;
+  padding: 8px;
+}
+
+.tr1 {
+  background-color: var(--lightGreen50);
+}
+
+.tr2 {
+  background-color: #2edf9e;
+}
+
+.saldo {
   position: absolute;
   top: 4px;
-  right: 45%;
+  right: 50%;
   height: 61px;
-  width: 180px;
-  background-color: rgb(235, 235, 235);
-  border-radius: 50px;
+  background-color: lightgray;
 }
